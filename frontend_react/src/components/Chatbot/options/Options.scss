@@ -1,0 +1,31 @@
+.options-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.option-button {
+  margin: 5px;
+  border-radius: 25px;
+  padding: 8px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    #d53a9d,
+    #743ad5,
+    #d53a9d,
+    #743ad5
+  );
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    color: var(--links-red-color);
+  }
+}

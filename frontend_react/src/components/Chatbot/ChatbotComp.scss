@@ -1,0 +1,307 @@
+.chatbot-button {
+  z-index: 101;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 100%;
+  background: transparent;
+
+  button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: var(--white-color);
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(202, 67, 230, 0.5);
+      left: -20px;
+    }
+    div {
+      width: 50px;
+      height: 95px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      border-radius: 10px 0 0 10px;
+      background-image: linear-gradient(
+        to bottom,
+        #d53a9d,
+        #743ad5,
+        #d53a9d,
+        #743ad5
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media screen and(max-width:620px) {
+        width: 30px;
+      }
+      span {
+        font-size: 1.2rem;
+        font-weight: 700;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+.chatbot-container {
+  z-index: 100;
+  text-align: center;
+  position: fixed;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 520px;
+  bottom: 0%;
+  right: 0%;
+  opacity: 0;
+  transform: scale(0);
+  @media screen and(max-width: 600px) {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+.chatbot {
+  z-index: 100;
+  width: 300px;
+  height: 520px;
+  background: #e4e4e4;
+  box-shadow: 0 0 15px rgba(202, 67, 230, 0.5);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  @media screen and(max-width: 600px) {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+.closeIcon {
+  position: absolute;
+  z-index: 102;
+  top: -8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: var(--bg-color);
+  width: 25px;
+  height: 25px;
+  padding: 0.2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  &:hover {
+    color: var(--links-red-color);
+  }
+}
+.chatbot-header {
+  position: absolute;
+  z-index: 101;
+  top: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: #4f00d6;
+  padding: 5px;
+  @media screen and(max-width: 600px) {
+    width: 100%;
+  }
+  h4 {
+    color: #fff;
+    font-weight: 100;
+
+    span {
+      color: red;
+      font-weight: 200;
+    }
+  }
+}
+
+.react-chatbot-kit-chat-container {
+  width: 300px;
+  height: 520px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  z-index: 100;
+
+  @media screen and(max-width: 600px) {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+.react-chatbot-kit-chat-inner-container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  overflow: auto;
+  @media screen and(max-width: 600px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+.react-chatbot-kit-chat-inner-container::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+.react-chatbot-kit-chat-inner-container::-webkit-scrollbar-track {
+  background: transparent;
+  border: none;
+}
+.react-chatbot-kit-chat-inner-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #743ad5, #d53a9d, #743ad5, #d53a9d);
+  border-radius: 10px;
+}
+
+.react-chatbot-kit-chat-message-container {
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.react-chatbot-kit-chat-input {
+  z-index: 100;
+}
+
+.react-chatbot-kit-user-avatar-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #cecece;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.react-chatbot-kit-user-chat-message-container {
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  padding: 1rem 0.5rem 0.3rem 0.5rem;
+  background: transparent;
+  border-radius: 20px;
+  margin: 0rem 0;
+}
+
+.react-chatbot-kit-user-chat-message {
+  color: white;
+  background: #301f5e;
+  align-items: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.4rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  word-break: break-word;
+  max-width: 250px;
+  margin-right: 1rem;
+  border-radius: 20px 0px 20px 20px;
+}
+.react-chatbot-kit-chat-input-form {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  border-top: 1px solid #4f00d6;
+  @media screen and(max-width: 600px) {
+    width: 100%;
+  }
+}
+.react-chatbot-kit-chat-input {
+  width: 300px;
+  height: 43px;
+  border: none;
+  padding-left: 0.3rem;
+  @media screen and(max-width: 600px) {
+    width: 100%;
+  }
+}
+.react-chatbot-kit-chat-input::placeholder {
+  border: none;
+  padding-left: 0.1rem;
+}
+
+.react-chatbot-kit-chat-btn-send {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  width: 40px;
+  height: auto;
+  border: none;
+  padding: 0.5rem;
+}
+
+.react-chatbot-kit-chat-btn-send-icon {
+  filter: invert(95%) sepia(1%) saturate(3698%) hue-rotate(209deg)
+    brightness(128%) contrast(79%);
+  z-index: 102;
+  cursor: pointer;
+}
+
+.react-chatbot-kit-chat-bot-message-container {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+
+  padding: 1rem 0.5rem 0.3rem 0.5rem;
+  background: transparent;
+  border-radius: 20px;
+  margin: 0rem 0;
+}
+
+.react-chatbot-kit-chat-bot-avatar-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-chatbot-kit-chat-input-avatar-icon {
+  width: 10px;
+  height: 10px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  color: white;
+  background: #750d7e;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.4rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  word-break: break-word;
+  max-width: 250px;
+  margin-left: 1rem;
+  border-radius: 0px 20px 20px 20px;
+}

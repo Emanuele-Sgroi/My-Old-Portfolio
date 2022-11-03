@@ -1,0 +1,256 @@
+.particlesClass {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.app__header {
+  width: 100%;
+  min-height: 100vh;
+  background-color: transparent;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+
+  @media screen and(max-width: 800px) {
+    background-image: url(../../assets/bgMobile.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .fake-nav {
+    width: 100%;
+    height: 110px;
+    background: transparent;
+  }
+
+  .app__head-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    @media screen and (max-width: 1240px) {
+      flex-direction: column-reverse;
+    }
+    .app__head-bio-container {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0rem 1rem 0 2rem;
+
+      @media screen and (max-width: 669px) {
+        margin: 0rem 1rem 0 1rem;
+      }
+      h4 {
+        width: 620px;
+        font-size: 2.6rem;
+        font-weight: 500;
+        color: var(--lightGray-color);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        background: transparent;
+        padding: 0.5rem;
+        border: 1px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          to left,
+          #743ad5,
+          #d53a9d,
+          #743ad5,
+          #d53a9d
+        );
+        text-align: center;
+        box-shadow: 0 0 10px rgba(138, 137, 137, 0.5);
+        @media screen and (max-width: 1400px) {
+         width: 500px;
+         font-size:2rem;
+        }
+        @media screen and (max-width: 755px) {
+          width: 500px;
+          font-size: 2rem;
+        }
+        @media screen and (max-width: 629px) {
+          width: 300px;
+          font-size: 1rem;
+        }
+      }
+
+      h2 {
+        font-size: 6rem;
+        font-weight: 700;
+        color: var(--lightGray-color);
+        letter-spacing: 5px;
+        background: transparent;
+        margin-bottom: 0.5rem;
+
+        span {
+          color: #cd005c;
+        }
+        @media screen and (max-width: 1400px) {
+          font-size: 4.8rem;
+         }
+        @media screen and (max-width: 941px) {
+          font-size: 4.7rem;
+        }
+        @media screen and (max-width: 817px) {
+          font-size: 4.5rem;
+        }
+        @media screen and (max-width: 755px) {
+          font-size: 4rem;
+        }
+        @media screen and (max-width: 609px) {
+          font-size: 2.8rem;
+        }
+      }
+
+      h3 {
+        font-size: 4rem;
+        font-weight: 700;
+        color: var(--lightGray-color);
+        letter-spacing: 5px;
+        margin-top: -1rem;
+        background: transparent;
+        span {
+          color: #4f00d6;
+        }
+        @media screen and (max-width: 1400px) {
+          font-size: 3.6rem;
+         }
+        @media screen and (max-width: 941px) {
+          font-size: 3.4rem;
+        }
+        @media screen and (max-width: 817px) {
+          font-size: 2.5rem;
+        }
+        @media screen and (max-width: 755px) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: 609px) {
+          font-size: 2.4rem;
+        }
+      }
+
+      p {
+        background: rgba(255, 255, 255, 0.055);
+        width: 85%;
+        text-align: left;
+        margin-top: 1rem;
+        border-radius: 15px;
+        padding: 0.8rem;
+        word-break: break-word;
+        color: var(--gray-color);
+        font-size: 1.3rem;
+        line-height: 1.5em;
+
+        @media screen and (max-width: 1240px) {
+          width: 96%;
+        }
+        @media screen and (max-width: 609px) {
+          font-size: 1.1rem;
+        }
+      }
+
+      a {
+        padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: var(--lightGray-color);
+        letter-spacing: 5px;
+        text-decoration: none;
+        background: transparent;
+        border: 1px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          to left,
+          #743ad5,
+          #d53a9d,
+          #743ad5,
+          #d53a9d
+        );
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        box-shadow: 0 0 10px rgba(138, 137, 137, 0.5);
+      }
+    }
+  }
+
+  .app__head-img-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .spaceship {
+      width: 400px;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%, -50%);
+      z-index: 6;
+      filter: grayscale(35%);
+      animation: spaceship 2.5s linear infinite;
+
+      @media screen and (max-width: 1240px) {
+        margin: 3rem 0 0rem 0;
+      }
+      @media screen and (max-width: 1400px) {
+        width: 360px;
+        height: auto;
+      }
+      @media screen and (max-width: 609px) {
+        width: 340px;
+        height: auto;
+        margin-top:3rem;
+      }
+
+      @keyframes spaceship {
+        0% {
+          top: 20%;
+        }
+        50% {
+          top: 23%;
+        }
+        100% {
+          top: 20%;
+        }
+      }
+    }
+    .planet {
+      width: 400px;
+      height: 400px;
+      filter: grayscale(35%);
+      margin-right: 18vw;
+      margin-top: 11rem;
+      z-index: 5;
+      @media screen and (max-width: 1240px) {
+        margin: 10rem 0 2.5rem 0;
+      }
+      @media screen and (max-width: 1400px) {
+        width: 360px;
+        height: auto;
+      }
+      @media screen and (max-width: 609px) {
+        width: 340px;
+        height: 340px;
+        margin-top:14rem;
+        margin-bottom: 8rem;
+      }
+    }
+  }
+}
