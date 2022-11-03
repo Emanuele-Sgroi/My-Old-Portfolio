@@ -5,6 +5,7 @@ I decided to share the template of my portfolio that I have created with React J
 
 Below You can find all the information of how you should build something like that before you clone this project.
 
+![](images/homepage.jpg)
 
 ## Demo
 
