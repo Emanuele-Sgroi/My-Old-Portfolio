@@ -94,4 +94,11 @@ Documentation [here](https://fredrikoseberg.github.io/react-chatbot-kit-docs/)
 
 This small project can be ideal for these people that are starting with React js. Feel free to use the code for your own needs
 
+## More screenshots
 
+`Chatbot`
+![](images/chatbot.jpg)
+
+`animations created with SCSS`
+![](images/skills.jpg)
+![](images/atom.jpg)
