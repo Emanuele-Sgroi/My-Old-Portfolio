@@ -1,3 +1,10 @@
+# MY OLD PORTFOLIO
+
+This was my very first react project and I used it as portfolio in the past. Honestly, it's a pretty website but nothing too crazy. I will not clean/update the code, as there is no point. You can have a look at the old readme below.
+
+**NO DEMO IS AVAILABLE**
+
+---
 
 # React JS and Sanity portfolio
 
@@ -6,10 +13,6 @@ I decided to share the template of my portfolio that I have created with React J
 Below You can find all the information of how you should build something like that before you clone this project.
 
 ![](images/homepage.jpg)
-
-## Demo
-
-Visit my [website](https://emanuelesgroi.com) to see the template.
 
 
 ## Steps to build this project
